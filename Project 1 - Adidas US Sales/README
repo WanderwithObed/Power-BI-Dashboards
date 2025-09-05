@@ -1,0 +1,86 @@
+# Adidas US Sales Dashboard
+
+##  Table of Contents
+1. [Project Overview](#project-overview)  
+2. [Data Sources](#data-sources)  
+3. [Tools & Technologies](#tools--technologies)  
+4. [Data Cleaning & Preparation](#data-cleaning--preparation)  
+5. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
+6. [Data Analysis & Modeling](#data-analysis--modeling)  
+7. [Results & Findings](#results--findings)  
+8. [Recommendations](#recommendations)  
+9. [Limitations](#limitations)  
+10. [References](#references)
+
+---
+
+##  Project Overview
+An interactive Power BI dashboard showcasing **Adidas US sales** in 2020–2021.  
+Track key metrics such as Total Sales, Units Sold, Average Price, Operating Profit, sales trends, performance by states and retailers, and sales method distribution.
+
+---
+
+##  Data Sources
+- Raw sales data: CSV or Excel (Orders, Dates, Regions, Retailers)  
+- Supplementary lookup tables (state to region mapping, etc.)  
+
+---
+
+##  Tools & Technologies
+- Power BI Desktop for visualization & modeling  
+- Power Query for data cleaning  
+- DAX for measures (e.g., Total Sales, Average Price, Profit)  
+- GitHub for version control and collaboration
+
+---
+
+##  Data Cleaning & Preparation
+- Data import and type conversion  
+- Handling missing values and removing duplicates  
+- Creating calculated columns (e.g., Month Short Name, Region mapping)  
+- Establishing proper table relationships
+
+---
+
+##  Exploratory Data Analysis (EDA)
+- Trend analysis via line/area charts (monthly sales patterns)  
+- Geospatial analysis (state-level sales heatmap)  
+- Retailer ranking (bar chart of sales by retailer)  
+- Sales method breakdown (pie/donut chart)
+
+---
+
+##  Data Analysis & Modeling
+- DAX measures:  
+  - TotalSales = SUM(Orders[Sales])  
+  - AvgPrice = DIVIDE(TotalSales, SUM(Orders[Units Sold]))  
+  - OperatingProfit = SUM(Orders[Profit])  
+- Slicers/filters for Year, Region, Product category
+
+---
+
+##  Results & Findings
+- 2021 showed significant sales growth compared to 2020  
+- Leading retailers: West Gear ($242.9M), Foot Locker ($220M), Sports Direct ($182.5M)  
+- In-store, outlet, and online sales distribution  
+- Regional sales patterns revealed by US state map
+
+---
+
+##  Recommendations
+- Leverage high-performing retailers for partnership expansions  
+- Ramp up online channel investment due to growing volume share  
+- Explore marketing in underperforming states identified by the heatmap
+
+---
+
+##  Limitations
+- Data covers only two years (2020–2021)  
+- No demographic or customer-level insights  
+- Possible data granularity issues (e.g., missing state-level details)
+
+---
+
+##  References
+- Project visuals and methodology references (e.g., Power BI documentation)  
+- Data source attribution if third-party data used  
