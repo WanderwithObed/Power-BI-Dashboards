@@ -65,9 +65,13 @@ Initial exploration focused on:
 Key measures created in Power BI (DAX):
 ```Power BI (DAX)
 Total Revenue = SUM(Sales[Revenue])
+
 Units Sold = SUM(Sales[Quantity])
+
 Average Price = DIVIDE([Total Revenue],[Units Sold])
+
 Revenue by Month = FORMAT(Orders[OrderDate], "mmm")
+
 % Revenue by Retailer = DIVIDE([Retailer Revenue],[Total Revenue])
 ```
 
